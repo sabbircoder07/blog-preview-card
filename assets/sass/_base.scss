@@ -1,0 +1,120 @@
+$color-primary: hsl(47, 88%, 63%);
+
+$color-White: hsl(0, 0%, 100%);
+$color-Grey: hsl(0, 0%, 50%);
+$color-Black: hsl(0, 0%, 7%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: $color-Grey;
+  background-color: $color-primary;
+  height: 100vh;
+  min-height: calc(100vh - 2 * 4vw);
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.blog-previw-container {
+  width: 37.5rem;
+  height: auto;
+  background-color: $color-White;
+  border-radius: 9px;
+  overflow: hidden;
+  transform: scale(1.01);
+  box-shadow: 0 1rem 1rem 0.8rem rgba($color-Black, 0.8);
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.blog-details {
+  padding: 1.2rem;
+}
+
+.header-image:hover {
+  transform: scale(1.02);
+}
+
+.blog-label {
+  text-decoration: none;
+  background-color: $color-primary;
+  padding: 0.6rem 1.2rem;
+  color: $color-Black;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $color-Grey;
+  margin-top: 0.8rem;
+}
+
+.heading-primary {
+  font-size: 2rem;
+  font-weight: 800;
+  color: $color-Black;
+  margin: 0.6rem 0 1rem 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.heading-primary:hover {
+  color: $color-primary;
+}
+
+.blog-author {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 1rem;
+  margin: 1.4rem 0 1rem 0;
+}
+.author-image {
+  border-radius: 50%;
+  width: 3.4rem;
+  height: auto;
+  object-fit: cover;
+}
+.author-name {
+  color: $color-Black;
+  font-weight: 700;
+}
+.author-profile {
+  text-decoration: none;
+  color: $color-Black;
+  font-weight: 700;
+}

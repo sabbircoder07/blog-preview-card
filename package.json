@@ -1,0 +1,17 @@
+{
+  "name": "blog-preview-card",
+  "version": "1.0.0",
+  "description": "blog preview page",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "sabbir ahmed",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3",
+    "sass": "^1.69.5"
+  }
+}
